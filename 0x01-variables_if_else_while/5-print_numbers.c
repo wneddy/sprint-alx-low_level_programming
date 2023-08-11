@@ -1,23 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - lets print one to ten
+ * main - lets print one two ten
  *
- * while was the name
- *
- * Return: 0 terminate at 10
+ * Return: 0 (terminate)
  */
 int main(void)
 {
-	int g = 0;
+	int p;
 
-	while (g < 10)
+	for (p = 0; p < 10; p++)
 	{
-		printf("%d", g);
-		g++;
+		printf("%d", p);
 	}
-	putchar('\n')
-
+	putchar('\n');
 	return (0);
 }
