@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - lets get (0-10)
+ * main - lets print one to ten
  *
  * while was the name
  *
