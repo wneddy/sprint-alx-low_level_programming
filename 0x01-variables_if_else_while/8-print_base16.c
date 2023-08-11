@@ -1,24 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - hexadecimal printing all the numbers
- *
- * consider using putchar
- *
+ * main - solving out
+ * print base sixteen numbers using
+ * putchar
  * Return: 0 (terminate)
  */
 int main(void)
 {
-	int h;
+	int h = '0';
+	int b16 = 'a';
 
-	for (h = '0'; h < '10'; h++)
+	while (h <= '9')
 	{
 		putchar(h);
+		h++;
 	}
-	for (h = 'a'; h < 'g'; h++)
+
+	while (b16 <= 'f')
 	{
-		putchar(h);
+		putchar(b16)
+		b16++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
