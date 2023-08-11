@@ -1,15 +1,14 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
 /**
- * main - declaring the main function of the program
+ * main - program to generate random numbers
+ * and print the
  *
- * printing the value of the variable (n)
- * Return: 0 terminate when done
+ * (n) number set to regenaration
+ *
+ * Return: 0 termination
  */
 int main(void)
 {
@@ -20,15 +19,15 @@ int main(void)
 
 	if ((n % 10) > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
+		printf("last digit of %d is %d and is greater than 5\n", n, n % 10);
 	}
-	else if ((n % 10) < 6 && (n % 10) != 0)
+	else if ((n % 10) == 0)
 	{
-		printf("Last digit of %d is d% and is less than 6 and not 0\n", n, n % 10);
+		printf("last digit of %d is %d and is 0\n", n, n % 10);
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is 0\n", n, n % 10);
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
 	}
 
 	return (0);
