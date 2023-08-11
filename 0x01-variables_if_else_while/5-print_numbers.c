@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - lets get (0-10)
@@ -9,12 +10,12 @@
  */
 int main(void)
 {
-	int game_1 = 0;
+	int g = 0;
 
-	while (game_1 < 10)
+	while (g < 10)
 	{
-		printf("%d", game_1);
-		game_1++;
+		printf("%d", g);
+		g++;
 	}
 	putchar('\n')
 
