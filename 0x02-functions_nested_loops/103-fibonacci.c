@@ -14,7 +14,7 @@ int main(void)
 
 	while (1)
 	{
-		sersum = ser1 + ser2;
+		ser_sum = ser1 + ser2;
 		if (ser_sum > 4000000)
 			break;
 
