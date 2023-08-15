@@ -22,7 +22,7 @@ int main(void)
 			all_add += ser_sum;
 
 		ser1 = ser2;
-		ser1 = ser_sum;
+		ser2 = ser_sum;
 	}
 	printf("%.0f\n", all_add);
 
