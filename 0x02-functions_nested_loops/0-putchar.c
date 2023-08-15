@@ -3,13 +3,13 @@
 /**
  * main - The first task
  *
- * program to print
+ * program to print a printing function
  *
  * Return: 0 (terminate)
  */
 int main(void)
 {
-	printf("_putchar,\n");
+	putchar("_putchar,\n");
 
 	return (0);
 }
