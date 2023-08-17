@@ -1,5 +1,7 @@
-#ifndef main_h
-#define main_h
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
 
 /* list of functions */
 
