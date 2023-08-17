@@ -25,7 +25,7 @@ void more_numbers(void)
 				_putchar(var2 + '0');
 				s = s % 10;
 			}
-			_putchar(b + '0');
+			_putchar(s + '0');
 		}
 		_putchar('\n');
 	}
