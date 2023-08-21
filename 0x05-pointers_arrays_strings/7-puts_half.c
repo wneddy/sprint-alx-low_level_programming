@@ -19,17 +19,11 @@ void puts_half(char *str)
 	}
 
 	if (cnt % 2 == 1)
-	{
 		x = cnt / 2;
-	}
 	else
-	{
 		x = (cnt - 1) / 2;
-	}
 
 	for (x++; x < cnt; cnt++)
-	{
 		_putchar(str[x]);
-	}
 	_putchar('\n');
 }
