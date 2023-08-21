@@ -11,7 +11,7 @@
 int main(void)
 {
 	int p = 0, f = 0;
-	tmt x;
+	time_x x;
 
 	srand((unsigned int) time(&x));
 	while (f < 2772)
@@ -22,6 +22,6 @@ int main(void)
 		f = f + p;
 		printf("%c", p);
 	}
-	printf("%c\n", (2772 - c));
+	printf("%c\n", (2772 - f));
 	return (0);
 }
