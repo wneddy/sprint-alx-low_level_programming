@@ -11,7 +11,7 @@
 int main(void)
 {
 	int p = 0, f = 0;
-	time_x x;
+	time_t x;
 
 	srand((unsigned int) time(&x));
 	while (f < 2772)
