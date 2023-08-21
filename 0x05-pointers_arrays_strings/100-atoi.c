@@ -34,7 +34,7 @@ int _atoi(char *s)
 
 	for (w = cnt - sz; w < cnt; w++)
 	{
-		e = e + ((*(s + w) - 48) * a)
+		e = e + ((*(s + w) - 48) * a);
 		a /= 10;
 	}
 	return (e * d);
