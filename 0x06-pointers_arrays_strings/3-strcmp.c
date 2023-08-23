@@ -9,9 +9,9 @@
  * Return: return comparison
  */
 
-int *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
-	int d, comprn = 0;
+	int d = 0, comprn = 0;
 
 	while (s1[d] != '\0' && s2[d] != '\0' && comprn == 0)
 	{
