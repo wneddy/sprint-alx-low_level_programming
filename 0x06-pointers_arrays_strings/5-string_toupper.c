@@ -4,7 +4,7 @@
  * string_toupper - convertion a
  * string from lowercase to uppercase
  * @arr: set array
- * Return: res final
+ * Return: arr final
  */
 
 char *string_toupper(char *arr)
@@ -20,5 +20,5 @@ char *string_toupper(char *arr)
 		e++;
 	}
 
-	return (res);
+	return (arr);
 }
