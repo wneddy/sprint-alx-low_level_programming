@@ -16,7 +16,7 @@ char *rot13(char *d)
 
 	for (e = 0; d[e] != '\0'; e++)
 	{
-		for (w = 0; w < 52; d++)
+		for (w = 0; w < 52; w++)
 		{
 			if (d[e] == not_enc[w])
 			{
