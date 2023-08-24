@@ -16,7 +16,7 @@ char *cap_string(char *ch)
 	for (e = 0; ch[e] != '\0'; e++)
 	{
 		last = e - 1;
-		if (ch[e] >= '97' && ch[e] <= '122')
+		if (ch[e] >= 'a' && ch[e] <= 'z')
 		{
 			if (e == 0)
 			{
