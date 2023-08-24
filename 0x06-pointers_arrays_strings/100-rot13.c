@@ -12,9 +12,9 @@ char *rot13(char *d)
 {
 	int e, w;
 	char not_enc[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char enc_set[] = ""NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char enc_set[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (i = 0; d[e] != '\0'; e++)
+	for (e = 0; d[e] != '\0'; e++)
 	{
 		for (w = 0; w < 52; d++)
 		{
