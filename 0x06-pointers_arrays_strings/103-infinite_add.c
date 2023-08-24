@@ -26,7 +26,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	for (e = 0; e < size_r; e++, val1--, val2--)
 	{
-		if (len1 >= 0)
+		if (val1 >= 0)
 			plus += n1[val1] - '0';
 		if (val2 >= 0)
 			plus += n2[val2] - '0';
