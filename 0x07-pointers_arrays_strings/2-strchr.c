@@ -1,23 +1,27 @@
 #include "main.h"
-
+#define NULL 0
 /**
  * _strchr - locating a certain character
  * @s: set string
  * @c: iterator
  *
  * Return: current position
+ * else null
  */
 
 char *_strchr(char *s, char c)
 {
-	int e;
+	int e = 0;
 
-	for (e = 0; s[e] != '\0'; e++)
+	while (s[e] != '\0')
 	{
 		if (s[e] == c)
 		{
-			break;
-			return (s[e] == c ? (s + e) : '\0');
+			return (s + e);
 		}
+		e++;
 	}
+	if (c == '\0')
+		return (s + e);
+	return (NULL);
 }
