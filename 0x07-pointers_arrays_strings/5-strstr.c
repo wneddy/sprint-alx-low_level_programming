@@ -1,5 +1,5 @@
 #include "main.h"
-
+#define NULL 0
 /**
  * _strstr - locating a substring
  * find the first occurence of substring
