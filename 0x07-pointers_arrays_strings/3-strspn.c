@@ -14,9 +14,9 @@ unsigned int _strspn(char *s, char *accept)
 	int x, y;
 	unsigned int check = 0;
 
-	for (x = 0; s[x] = ' '; x++)
+	for (x = 0; s[x] != ' '; x++)
 	{
-		for (y = 0; accept[y] = '\0'; y++)
+		for (y = 0; accept[y] != '\0'; y++)
 		{
 			if (s[x] == accept[y])
 				check++;
