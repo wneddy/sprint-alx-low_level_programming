@@ -31,5 +31,5 @@ int root_check(int p, int b)
 
 int _sqrt_recursion(int n)
 {
-	return (root(1, n));
+	return (root_check(1, n));
 }
