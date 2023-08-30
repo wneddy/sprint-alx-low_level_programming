@@ -2,29 +2,29 @@
 
 /**
  * wildcmp - two strings in comparison
- * @str2: comp string
- * @str1: given string
+ * @s2: comp string
+ * @s1: given string
  *
- * Return: same
+ * Return: same occurrence
  */
 
-int wildcmp(char *str1, char *str2)
+int wildcmp(char *s1, char *s2)
 {
-	if (*str1 == '\0' && str2 == '\0')
+	if (*s1 == '\0' && *s2 == '\0')
 	{
 		return (1);
 	}
-	if (*str1 == *str2)
+	if (*s1 == *s2)
 	{
-		return (wildcmp(str1 + 1, str2 + 1));
+		return (wildcmp(s1 + 1, s2 + 1));
 	}
-	if (*str2 == '*' && *(str2 + 1) != '\0' && *str1 == '\0')
+	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
 	{
 		return (0);
 	}
-	if (*str2 == '*')
+	if (*s2 == '*')
 	{
-		return (wildcmp(str1, str2 + 1) || wildcmp(str1 + 1str2));
+		return (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2));
 	}
 	return (0);
 }
