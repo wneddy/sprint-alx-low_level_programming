@@ -14,11 +14,11 @@ int root_check(int p, int b)
 	{
 		return (p);
 	}
-	if (p * P > b)
+	if (p * p > b)
 	{
 		return (-1);
 	}
-	return (root(p + 1, b));
+	return (root_check(p + 1, b));
 }
 
 /**
