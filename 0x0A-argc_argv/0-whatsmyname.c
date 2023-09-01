@@ -8,11 +8,10 @@
  * Return: 0 name of the program
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char **argv)
 {
-	(void)argc;
 
-	printf("Program name: %s\n", argv[0]);
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
