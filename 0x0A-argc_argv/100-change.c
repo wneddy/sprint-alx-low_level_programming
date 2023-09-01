@@ -13,7 +13,9 @@
 
 int main(int argc, char **argv)
 {
-	if cnts, das = 0;
+	int cnts, das;
+
+	das = 0;
 
 	if (argc == 1 || argc > 2)
 	{
