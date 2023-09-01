@@ -1,4 +1,4 @@
-#include "main.h"
+#include "stdio.h"
 
 /**
  * main - printing the program name
@@ -10,13 +10,8 @@
 
 int main(int argc, char **argv)
 {
-	if (argc > 0)
-	{
-		_putchar("Program name: %s\n", argv[0]);
-	}
-	else
-	{
-		_putchar("Program does not exist\n");
-	}
+
+	printf("Program name: %s\n", argv[0]);
+
 	return (0);
 }
