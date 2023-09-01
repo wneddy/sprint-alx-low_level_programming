@@ -12,8 +12,7 @@
 
 int main(int argc, char **argv)
 {
-	unsigned int x;
-	int i, res;
+	int x, i, res;
 
 	res = 0;
 	if (argc > 1)
