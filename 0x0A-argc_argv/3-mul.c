@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 	int d, c, res;
 
-	if (argc <= 3)
+	if (argc == 3)
 	{
 		d = atoi(argv[1]);
 		c = atoi(argv[2]);
@@ -23,6 +23,7 @@ int main(int argc, char **argv)
 	else
 	{
 		printf("Error\n");
+		return (1);
 	}
 	return (0);
 }
