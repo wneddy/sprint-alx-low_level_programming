@@ -50,7 +50,7 @@ char **strtow(char *str)
 				x7++;
 			if (str[e] != ' ' && (str[e + 1] == ' ' || str[e + 1] == '\0'))
 			{
-				stg[d] = malloc((c - x7 + 2) * sizeof(char));
+				stg[d] = malloc((e - x7 + 2) * sizeof(char));
 				if (stg[d] == NULL)
 				{
 					_free_grid(stg, d);
@@ -61,7 +61,7 @@ char **strtow(char *str)
 		}
 		for (a = 0; x7 <= e; x7++, a++)
 			stg[d][a] = str[x7];
-		arr[d][a] = '\0';
+		stg[d][a] = '\0';
 	}
 	stg[d] = NULL;
 	return (stg);
