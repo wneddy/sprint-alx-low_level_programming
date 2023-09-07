@@ -16,10 +16,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *res;
 	unsigned int e = n, d; /* e is n d is the index */
 
-	if (s2 == NULL)
-		s2 = "";
 	if (s1 == NULL)
 		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	d = 0;
 	while (s1[d])
 	{
