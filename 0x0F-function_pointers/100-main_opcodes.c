@@ -29,10 +29,10 @@ int main(int argc, char *argv[])
 
 	pnt = main;
 	pnt_val = pnt;
-	count = 0;
+	p = 0;
 	while (p < val)
 	{
-		printf("%02hhx", pnt_val[pnt]);
+		printf("%02hhx", pnt_val[p]);
 		if (p < val - 1)
 			printf(" ");
 		else
