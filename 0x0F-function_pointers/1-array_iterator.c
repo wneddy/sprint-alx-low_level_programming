@@ -1,23 +1,21 @@
 #include "function_pointers.h"
-#include <stdlib.h>
+
+
 /**
- * array_iterator - function to exe a function
- * given as para on each element
+ * array_iterator - function to exe a function given
+ * as para on each element of an array
  * @array: given array
  * @size: array size
- * @action: function callback
- *
- * Return: nill
+ * @action: the callback function
  */
-
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	size_t s;
+	unsigned long int s;
 
-	if (array && action)
+	if (action && array)
 	{
 		s = 0;
-		while (s < size)
+		while (count < size)
 		{
 			action(array[s]);
 			s++;
