@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-
+#include <stdlib.h>
 /**
  * array_iterator - function to exe a function
  * given as para on each element
@@ -19,7 +19,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		s = 0;
 		while (s < size)
 		{
-			action(array[s];
+			action(array[s]);
 			s++;
 		}
 	}
