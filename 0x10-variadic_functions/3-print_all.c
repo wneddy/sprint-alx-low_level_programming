@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 	x = 0;
 	while (format && format[x])
 	{
-		spt = " ";
+		spt = "";
 		if (format[x + 1])
 			spt = ", ";
 		switch (format[x])
@@ -34,7 +34,7 @@ void print_all(const char * const format, ...)
 			break;
 		case 's':
 			arr = va_arg(ap, char *);
-			if (!*arr || !arr)
+			if (!arr || !*arr)
 			{
 				arr = "(nil)";
 			}
