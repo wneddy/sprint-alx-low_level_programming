@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_string - function to print only strings
+ * print_strings - function to print only strings
  * @separator: check commas
  * @n: numbers of elements
  *
