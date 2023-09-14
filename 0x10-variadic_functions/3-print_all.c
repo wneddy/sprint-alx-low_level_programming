@@ -37,9 +37,9 @@ void print_all(const char * const format, ...)
 			if (!*arr || !arr)
 			{
 				arr = "(nil)";
-				printf("%s%s", arr, spt);
-				break;
 			}
+			printf("%s%s", arr, spt);
+			break;
 		}
 		x++;
 	}
