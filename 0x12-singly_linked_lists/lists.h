@@ -8,20 +8,20 @@
 
 
 /**
- * struct h_list - (SLL) singly linked lists
- * @str: string - (mem alloc string)
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
  * @len: length of the string
- * @next: pointer to the next node
+ * @next: points to the next node
  *
- * Description: SLL node struct
+ * Description: singly linked list node structure
  */
-
-typedef struct h_list
+typedef struct list_s
 {
-	char *string;
-	unsigned int length;
-	struct h_list *next;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
+
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
