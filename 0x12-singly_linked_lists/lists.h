@@ -9,7 +9,7 @@
  * struct h_list - (SLL) singly linked lists
  * @str: string
  * @len: length of the string
- * @next: pointer to the next node 
+ * @next: pointer to the next node
  *
  * Descriptio: SLL node struct
  */
@@ -19,7 +19,7 @@ typedef struct h_list
 	char *string;
 	unsigned int length;
 	struct h_list *next;
-}list_t;
+} list_t;
 
 size_t print_list(const list_t *h);
 

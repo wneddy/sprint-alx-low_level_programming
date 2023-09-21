@@ -21,8 +21,8 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%d] %s\n", h->length, h->string);
 		}
-		h = h->next;
 		nds++;
+		h = h->next;
 	}
 	return (nds);
 }
