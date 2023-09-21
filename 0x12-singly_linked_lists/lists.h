@@ -19,7 +19,7 @@ typedef struct h_list
 	char *string;
 	unsigned int length;
 	struct h_list *next;
-}h_list;
+}list_t;
 
 size_t print_list(const list_t *h);
 

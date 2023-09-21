@@ -1,7 +1,7 @@
-#include "main.h"
+#include "lists.h"
 
 /**
- * print_lists - function to print all elements
+ * print_list - function to print all elements
  * @h: address list
  *
  * Return: no. of nodes
@@ -9,11 +9,11 @@
 
 size_t print_list(const list_t *h)
 {
-	h_list nds = 0;
+	size_t nds = 0;
 
 	while (h)
 	{
-		if (!(h->string))
+		if (h->string == NULL)
 		{
 			printf("[0] (nil)\n");
 		}
