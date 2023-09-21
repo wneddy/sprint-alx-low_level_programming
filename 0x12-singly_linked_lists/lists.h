@@ -4,14 +4,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <string.h>
+
 
 /**
  * struct h_list - (SLL) singly linked lists
- * @str: string
+ * @str: string - (mem alloc string)
  * @len: length of the string
  * @next: pointer to the next node
  *
- * Descriptio: SLL node struct
+ * Description: SLL node struct
  */
 
 typedef struct h_list

@@ -10,14 +10,12 @@
 
 size_t list_len(const list_t *h)
 {
-	const list_t *temp_alloc;
-	unsigned int count = 0;
-	temp_alloc = h;
+	size_t nds = 0;
 
-	while (temp_alloc)
+	while (h)
 	{
-		count++;
-		temp_alloc = temp_alloc->next;
+		nds++;
+		h = h->next;
 	}
-	return (count);
+	return (nds);
 }
