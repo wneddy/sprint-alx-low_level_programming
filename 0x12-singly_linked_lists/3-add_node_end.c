@@ -42,7 +42,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (tmp_2->next)
 	{
 		tmp_2 = tmp_2->next;
-		tmp_2->next = tmp_1;
 	}
+	tmp_2->next = tmp_1;
 	return (tmp_1);
 }
