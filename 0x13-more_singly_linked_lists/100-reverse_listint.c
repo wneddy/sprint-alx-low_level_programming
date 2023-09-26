@@ -7,7 +7,7 @@
  * Return: 1st node of reversed list
  */
 
-listint_t *reverse_listint(listint_t **head);
+listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *pre = NULL;
 	listint_t *now = *head;
