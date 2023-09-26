@@ -9,13 +9,15 @@
  * Return: 1 if success else -1 if fail
  */
 
-int delete_nodeint_at_index(listint_t **head, unsigned int index);
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint *now, *temp;
+	listint_t *now, *temp;
 	unsigned int x;
 
 	if (head == NULL || *head == NULL)
-		return (NULL);
+	{
+		return (-1);
+	}
 	if (index == 0)
 	{
 		temp = *head;
